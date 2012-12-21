@@ -14,9 +14,12 @@ script:
 notifications:
   email:
     - ryan@spreecommerce.com
+<<<<<<< HEAD
 branches:
   only:
     - 1-2-stable
     - master
+=======
+>>>>>>> 8e592a04a8e6123ac493c053875c78be6e197f8c
 rvm:
   - 1.9.3
