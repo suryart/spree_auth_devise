@@ -17,12 +17,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core'
-<<<<<<< HEAD
   s.add_dependency 'devise', '~> 2.1.2'
   s.add_dependency 'devise-encryptable'
-  s.add_dependency 'cancan', '= 1.6.7'
-=======
-  s.add_dependency 'devise', '~> 2.0.4'
   s.add_dependency 'cancan', '~> 1.6.7'
->>>>>>> 8e592a04a8e6123ac493c053875c78be6e197f8c
 end
