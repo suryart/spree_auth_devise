@@ -21,16 +21,9 @@ group :test do
   gem 'email_spec', '~> 1.2.1'
 
   gem 'ffaker'
-<<<<<<< HEAD
   gem 'shoulda-matchers', '~> 1.4.2'
   gem 'capybara', '1.1.3'
   gem 'database_cleaner', '0.9.1'
-=======
-  gem 'shoulda-matchers', '~> 1.0.0'
-  gem 'capybara', '1.1.3'
-  gem 'selenium-webdriver', '2.25.0'
-  gem 'database_cleaner', '0.7.1'
->>>>>>> 8e592a04a8e6123ac493c053875c78be6e197f8c
   gem 'launchy'
  # gem 'debugger'
 end
@@ -38,11 +31,7 @@ end
 if ENV['USE_LOCAL_SPREE']
   gem 'spree', :path => '~/Sites/gems/spree'
 else
-<<<<<<< HEAD
-  gem 'spree', :git => 'git://github.com/spree/spree', :branch => '1-2-stable'
-=======
   gem 'spree', :git => "git://github.com/spree/spree", :branch => "master"
->>>>>>> 8e592a04a8e6123ac493c053875c78be6e197f8c
 end
 
 gemspec
