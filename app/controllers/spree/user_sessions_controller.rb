@@ -5,16 +5,17 @@ class Spree::UserSessionsController < Devise::SessionsController
     helper 'spree/analytics'
   end
 
+<<<<<<< HEAD
   # include Spree::Core::ControllerHelpers::Order
   include Spree::Core::ControllerHelpers
+=======
+  include Spree::Core::ControllerHelpers::Auth
+  include Spree::Core::ControllerHelpers::Common
+  include Spree::Core::ControllerHelpers::Order
+>>>>>>> 8e592a04a8e6123ac493c053875c78be6e197f8c
 
   ssl_required :new, :create, :destroy, :update
   ssl_allowed :login_bar
-
-  # GET /resource/sign_in
-  def new
-    super
-  end
 
   def create
     authenticate_user!
@@ -22,7 +23,7 @@ class Spree::UserSessionsController < Devise::SessionsController
     if user_signed_in?
       respond_to do |format|
         format.html {
-          flash.notice = t(:logged_in_succesfully)
+          flash[:success] = t(:logged_in_succesfully)
           redirect_back_or_default(root_path)
         }
         format.js {
